@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tv_username"
+            android:text="Username"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:id="@+id/tv_isi_username"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_isi_username"
+            android:id="@+id/tv_tersimpan"
+            android:text="Tersimpan?"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tersimpan"
+            android:id="@+id/tv_isi_tersimpan"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_date"
+            android:layout_below="@id/tv_isi_tersimpan"
+            android:id="@+id/iv_date"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_date"
+            android:layout_below="@id/tv_isi_tersimpan"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tv_date"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
